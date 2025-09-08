@@ -6,13 +6,13 @@ public class tut {
         
         Scanner sc = new Scanner(System.in);
        
-        System.out.print("Choose Calculator: (Gravity, Science) ");
+        System.out.print("Choose Calculator: (Kinematics, Science) ");
         String choice = sc.nextLine();
         
         
         switch(choice) {
-            case "Gravity":
-            case "gravity":	
+            case "Kinematics":
+            case "kinematics":	
             		System.out.print("Enter Acceleration:  ");
                 		double a = sc.nextDouble(); // acceleration
                 
@@ -28,7 +28,7 @@ public class tut {
                 double result = (vi * t + xi) + (0.5*a*t*t);
                 
                 
-                System.out.println("Gravity Result: " + result + "m"); 
+                System.out.println("Kinematics Result: " + result + "m"); 
                 	break;
                 
             case "Science":
@@ -65,3 +65,4 @@ public class tut {
         sc.close();
     }   
 }
+
