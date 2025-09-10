@@ -5,10 +5,12 @@ public class tut {
 			Scanner sc = new Scanner(System.in);
 				Random rand = new Random();
 					int randomNumber = rand.nextInt(100) + 1;
-					int userGuess = 0; int attempts = 0;
+					int userGuess = 0; 
+					int attempts = 0;
 					boolean guessedCorrectly = false;
 					
-			while (!guessedCorrectly) { System.out.print("Enter a number: ");
+			while (!guessedCorrectly) {
+				System.out.print("Enter a number: ");
 					userGuess = sc.nextInt();
 						attempts++;
 						
@@ -29,10 +31,12 @@ public class tut {
 		} sc.close();
 	
 	
-	} public static int calculateScore(int attempts) {
+	} 
+	public static int calculateScore(int attempts) {
 			int maxScore = 100;
 			int score = maxScore - attempts;
 				if (score < 0)
 				{ score = 0; } return score;
 			}
 		}
+
